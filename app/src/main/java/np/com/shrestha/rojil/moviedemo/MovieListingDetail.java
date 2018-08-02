@@ -7,6 +7,7 @@ public class MovieListingDetail {
     private String movieName;
     private int genre;
     private String date;
+    private  int image;
 
     public String getMovieName() {
         return movieName;
@@ -40,7 +41,7 @@ public class MovieListingDetail {
         this.image = image;
     }
 
-    private  int image;
+
 
 
 

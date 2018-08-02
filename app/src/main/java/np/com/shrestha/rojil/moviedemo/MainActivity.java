@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<MovieListingDetail> getMovieList() {
         ArrayList<MovieListingDetail> movieList = new ArrayList<>();
-        movieList.add(new MovieListingDetail(R.drawable.ic_launcher_background,"sultan"));
+        movieList.add(new MovieListingDetail("sultan","action","13th august",R.drawable.ic_launcher_background));
         movieList.add(new MovieListingDetail());
         return movieList;
     }
