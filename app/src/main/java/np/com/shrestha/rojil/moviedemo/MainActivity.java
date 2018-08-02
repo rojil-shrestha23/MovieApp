@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.movie_listing);
         rvMoviesLists = findViewById(R.id.rv_example_view);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);
         rvMoviesLists.setLayoutManager(linearLayoutManager);
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<MovieListingDetail> getMovieList() {
         ArrayList<MovieListingDetail> movieList = new ArrayList<>();
-        movieList.add(new MovieListingDetail("sultan",R.drawable.ic_launcher_foreground));
-        movieList.add(new MovieListingDetail("kick",R.drawable.ic_launcher_background));
+        movieList.add(new MovieListingDetail(R.drawable.ic_launcher_background,"sultan"));
+        movieList.add(new MovieListingDetail());
         return movieList;
     }
 }
